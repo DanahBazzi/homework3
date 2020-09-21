@@ -59,7 +59,7 @@ table{
 }
 
 .colhead{
-  background-color: #7e0830;
+  background-color: #7e0820;
   color: #FFFFFF;
   min-width: 125px;
   padding: 10px;
@@ -76,7 +76,7 @@ table{
 
 
 td{
-  padding: 15px;
+  padding: 10px;
   text-align: center;
   border-top: 2px solid #000000;
 }
@@ -90,7 +90,9 @@ tr:nth-child(even){
 }
 
 tr:hover{
-  background-color: rgba(126,8,48,.25)
+  content: "";
+  background-color: rgb(126,8,48);
+  opacity: 0.25;
 }
 
 *{
@@ -110,6 +112,13 @@ thead tr:first-child th:first-child{
 
 thead tr:last-child th:last-child{
   border-top-right-radius: 10px;
+}
+
+th.rowhead:first-child{
+  border-bottom-left-radius: 10px;
+}
+tr td:last-child{
+  border-bottom-right-radius: 10px;
 }
 
 footer{
