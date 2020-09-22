@@ -64,6 +64,7 @@ table{
   min-width: 125px;
   padding: 10px;
   text-align: center;
+  vertical-align: middle;
   text-transform: uppercase;
 }
 
@@ -90,17 +91,16 @@ tr:nth-child(even){
 }
 
 tr:hover{
-  content: "";
-  background-color: rgb(126,8,48);
-  opacity: 0.25;
+  background-color: rgba(126,8,48,.25);
 }
 
-*{
-
+*focus{
+  border-style: dashed;
+  border-width: 3px;
 }
 
 body{
-  background-image: url("images/pigeon-background.JPEG");
+  background-image: url("../images/pigeon-background.JPEG");
   background-repeat: no-repeat;
   background-position: center;
   background-color: #DDDDDD;
@@ -114,11 +114,13 @@ thead tr:last-child th:last-child{
   border-top-right-radius: 10px;
 }
 
-th.rowhead:first-child{
+tbody tr:last-child td:last-child{
   border-bottom-left-radius: 10px;
 }
-tr td:last-child{
+
+tbody tr:first-child td:first-child{
   border-bottom-right-radius: 10px;
+  border-radius: 50px;
 }
 
 footer{
